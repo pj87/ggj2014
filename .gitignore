@@ -1,6 +1,8 @@
 *.meta
 *.dll
+Library
 Library/
+Temp
 Temp/
 *.csproj
 *.unityproj
