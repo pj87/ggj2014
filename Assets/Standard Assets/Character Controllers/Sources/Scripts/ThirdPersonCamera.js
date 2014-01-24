@@ -149,11 +149,14 @@ function Apply (dummyTarget : Transform, dummyCenter : Vector3)
 	cameraTransform.position = targetCenter;
 	cameraTransform.position += currentRotation * Vector3.back * distance;
 
-	// Set the height of the camera
-	cameraTransform.position.y = currentHeight;
+    // Set the height of the camera
+	//cameraTransform.rotation = 
+	cameraTransform.position.y = currentHeight + 5;
 	
 	// Always look at the target	
 	SetUpRotation(targetCenter, targetHead);
+
+	//cameraTransform.position.y = currentHeight - 2; 
 }
 
 function LateUpdate () {
